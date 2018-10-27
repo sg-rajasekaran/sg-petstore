@@ -1,4 +1,4 @@
-package sg.petsworld.sgpetstore;
+package sgpetstore;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
