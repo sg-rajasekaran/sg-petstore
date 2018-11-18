@@ -2,16 +2,9 @@ package sg.petsworld.sgpetstore.services;
 
 import sg.petsworld.sgpetstore.model.Pet;
 
-import java.util.Set;
-
 /*
  * created by NR on 18 Nov 2018
  */
-public interface PetService {
+public interface PetService extends CrudService<Pet, Long>{
 
-    Pet findById(long id);
-
-    Pet save(Pet pet);
-
-    Set<Pet> findAll();
 }
