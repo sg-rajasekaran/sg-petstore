@@ -2,10 +2,9 @@ package sg.petsworld.sgpetstore.bootstrap;
 /*
  * created by NR on 21 Nov 2018
  */
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import sg.petsworld.sgpetstore.map.OwnerServiceMap;
-import sg.petsworld.sgpetstore.map.VetServiceMap;
 import sg.petsworld.sgpetstore.model.Owner;
 import sg.petsworld.sgpetstore.model.Vet;
 import sg.petsworld.sgpetstore.services.OwnerService;
@@ -17,11 +16,12 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
-
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
+
+
 
     @Override
     public void run(String... args) throws Exception {

@@ -4,11 +4,12 @@ package sg.petsworld.sgpetstore.map;
  * created by NR on 18 Nov 2018
  */
 
+import org.springframework.stereotype.Service;
 import sg.petsworld.sgpetstore.model.Owner;
 import sg.petsworld.sgpetstore.services.OwnerService;
 
 import java.util.Set;
-
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 
