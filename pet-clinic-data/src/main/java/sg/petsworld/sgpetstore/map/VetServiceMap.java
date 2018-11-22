@@ -3,12 +3,13 @@ package sg.petsworld.sgpetstore.map;
 /*
  * Created by NR on 18 Nov 2018
  */
+
 import sg.petsworld.sgpetstore.model.Vet;
-import sg.petsworld.sgpetstore.services.CrudService;
+import sg.petsworld.sgpetstore.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
@@ -35,4 +36,6 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements Crud
         super.deleteById(id);
 
     }
+
+
 }

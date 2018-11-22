@@ -1,14 +1,14 @@
 package sg.petsworld.sgpetstore.map;
 
 import sg.petsworld.sgpetstore.model.Pet;
-import sg.petsworld.sgpetstore.services.CrudService;
+import sg.petsworld.sgpetstore.services.PetService;
 
 import java.util.Set;
 
 /*
  * Created by NR on 11/18
  */
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();
