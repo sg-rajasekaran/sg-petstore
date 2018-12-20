@@ -1,5 +1,7 @@
 package sg.petsworld.sgpetstore.model;
 
+import java.util.Set;
+
 public class Owner extends Person {
 
     private String address;

@@ -1,5 +1,7 @@
 package sg.petsworld.sgpetstore.model;
 
+import java.util.Set;
+
 public class Vet extends Person {
     private Set<Specialty> specialities;
 
